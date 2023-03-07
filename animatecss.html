@@ -2,7 +2,8 @@
   <link rel="stylesheet" href="css/pico.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
-    body {max-width: 600px; max-height: 400px;}
+    .container {max-width: 600px; max-height: 400px;}
+    div[id^=__lpform_] {display: none;}
   </style>
 </head>
 <body>
@@ -11,11 +12,11 @@
     <form>
       <label for="firstname" class="animate__animated animate__bounceInUp animate__delay-1s">
         First name
-        <input type="text" id="firstname" name="firstname" placeholder="First name" required data-lpignore="true">
+        <input type="text" id="firstname" name="firstname" placeholder="First name" required>
       </label>
       <label for="lastname" class="animate__animated animate__bounceInUp animate__delay-2s">
         Last name
-        <input type="text" id="lastname" name="lastname" placeholder="Last name" required data-lpignore="true">
+        <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
       </label>
       <label for="email" class="animate__animated animate__bounceInUp animate__delay-3s">
         Email address
